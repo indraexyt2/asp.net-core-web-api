@@ -1,4 +1,5 @@
-﻿using Latihan.Data;
+﻿using api.Helpers;
+using Latihan.Data;
 using Latihan.Dtos.Stock;
 using Latihan.Interfaces;
 using Latihan.Models;
@@ -35,11 +36,23 @@ namespace Latihan.Repository
             return stockModel;
         }
 
-        public async Task<List<Stock>> GetAllAsync()
+        public async Task<List<Stock>> GetAllAsync(QueryObject query)
         {
-           return await _context.Stock
-                .Include(c => c.Comments)
-                .ToListAsync();
+            var stocks = _context.Stock
+                 .Include(c => c.Comments)
+                 .AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(query.CompanyName))
+            {
+                stocks = stocks.Where(s => s.CompanyName == query.CompanyName);
+            }
+
+            if (!string.IsNullOrWhiteSpace(query.Symbol))
+            {
+                stocks = stocks.Where(s => s.Symbol == query.Symbol);
+            }
+
+            return await stocks.ToListAsync();
         }
 
         public async Task<Stock?> GetByIdAsync(int id)
