@@ -52,6 +52,15 @@ namespace Latihan.Repository
                 stocks = stocks.Where(s => s.Symbol == query.Symbol);
             }
 
+            if (!string.IsNullOrWhiteSpace(query.SortBy))
+            {
+                if (query.SortBy.Equals("Symbol", StringComparison.OrdinalIgnoreCase))
+                {
+                    stocks = query.IsDecending ? stocks.OrderByDescending(s => s.Symbol)
+                        : stocks.OrderBy(s => s.Symbol);
+                }
+            }
+
             return await stocks.ToListAsync();
         }
 
