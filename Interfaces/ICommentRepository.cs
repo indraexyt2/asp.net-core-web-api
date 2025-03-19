@@ -1,6 +1,6 @@
-﻿using Latihan.Models;
+﻿using api.Models;
 
-namespace Latihan.Interfaces
+namespace api.Interfaces
 {
     public interface ICommentRepository
     {

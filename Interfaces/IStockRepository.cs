@@ -1,8 +1,8 @@
 ﻿using api.Helpers;
-using Latihan.Dtos.Stock;
-using Latihan.Models;
+using api.Dtos.Stock;
+using api.Models;
 
-namespace Latihan.Interfaces
+namespace api.Interfaces
 {
     public interface IStockRepository
     {

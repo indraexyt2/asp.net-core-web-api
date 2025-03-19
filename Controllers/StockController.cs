@@ -1,12 +1,12 @@
 ﻿using api.Helpers;
-using Latihan.Data;
-using Latihan.Dtos.Stock;
-using Latihan.Interfaces;
-using Latihan.Mappers;
+using api.Data;
+using api.Dtos.Stock;
+using api.Interfaces;
+using api.Mappers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace Latihan.Controllers
+namespace api.Controllers
 {
     [Route("api/stock")]
     [ApiController]

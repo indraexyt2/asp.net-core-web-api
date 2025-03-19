@@ -1,6 +1,6 @@
-﻿using Latihan.Dtos.Comment;
+﻿using api.Dtos.Comment;
 
-namespace Latihan.Dtos.Stock
+namespace api.Dtos.Stock
 {
     public class StockDto
     {

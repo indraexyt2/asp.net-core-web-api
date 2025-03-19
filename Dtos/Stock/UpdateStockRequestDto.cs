@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Latihan.Dtos.Stock
+namespace api.Dtos.Stock
 {
     public class UpdateStockRequestDto
     {

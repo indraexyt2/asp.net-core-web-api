@@ -1,9 +1,9 @@
-﻿using Latihan.Dtos.Comment;
-using Latihan.Interfaces;
-using Latihan.Mappers;
+﻿using api.Dtos.Comment;
+using api.Interfaces;
+using api.Mappers;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Latihan.Controllers
+namespace api.Controllers
 {
     [Route("api/comment")]
     [ApiController]

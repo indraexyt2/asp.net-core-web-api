@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Latihan.Dtos.Comment
+namespace api.Dtos.Comment
 {
     public class CreateCommentRequestDto
     {

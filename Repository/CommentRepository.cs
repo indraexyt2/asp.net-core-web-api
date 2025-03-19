@@ -1,9 +1,9 @@
-﻿using Latihan.Data;
-using Latihan.Interfaces;
-using Latihan.Models;
+﻿using api.Data;
+using api.Interfaces;
+using api.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Latihan.Repository
+namespace api.Repository
 {
     public class CommentRepository : ICommentRepository
     {

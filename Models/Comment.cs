@@ -1,4 +1,4 @@
-﻿namespace Latihan.Models
+﻿namespace api.Models
 {
     public class Comment
     {

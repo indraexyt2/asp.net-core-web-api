@@ -1,8 +1,8 @@
 ﻿using System.Runtime.CompilerServices;
-using Latihan.Dtos.Stock;
-using Latihan.Models;
+using api.Dtos.Stock;
+using api.Models;
 
-namespace Latihan.Mappers
+namespace api.Mappers
 {
     public static class StockMappers
     {
